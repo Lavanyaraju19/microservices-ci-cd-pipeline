@@ -30,6 +30,8 @@ microservices-ci-cd-pipeline/
 │   └── node_modules/          # Local dependencies
 └── README.md                  # Project documentation
 
+---
+
 🚀 Pipeline Workflow (Jenkinsfile)
 Clone Source Code
 
@@ -42,7 +44,9 @@ Build Docker Image
 Push to DockerHub (optional)
 
 Deploy to Container Runtime
-✅ Prerequisites
+---
+
+Prerequisites
 Jenkins installed locally or on cloud (e.g., Jenkins on EC2 or Docker)
 
 Docker installed on Jenkins agent
@@ -70,21 +74,11 @@ Build Docker image
 
 Tag and deploy (optional: push to DockerHub)
 
-📦 Docker Commands (Manual Run Option)
-bash
-Copy
-Edit
+Docker Commands (Manual Run Option)
 cd backend
 docker build -t microservice-demo .
 docker run -p 3000:3000 microservice-demo
-📷 Optional Additions
-Add test report publishing in Jenkins
 
-Integrate with SonarQube or Nexus
-
-Push to DockerHub
-
-Deploy to Kubernetes or ECS
 
 📜 License
 MIT — use this project freely for learning and deployment demos.
